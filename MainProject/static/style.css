@@ -1,0 +1,90 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: "Times New Roman", serif;
+}
+
+h1 {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    width: fit-content;
+    margin: 15px auto;
+    font-size: 45px;
+}
+
+.main_screen h2,
+.add_operation h2,
+.operations h2 {
+    font-size: 25px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    width: fit-content;
+}
+
+.main_screen_links ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.main_screen_links li {
+    margin-bottom: 5px;
+}
+
+.add_operation input,
+.operations input {
+    background-color: black;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.add_operation button,
+.operations button {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add_operation button:hover,
+.operations button:hover {
+    background-color: white;
+    color: black;
+}
+
+.operations h3 {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    width: fit-content;
+}
+
+.operations input::placeholder,
+.add_operation input::placeholder {
+    color: #b8b8b8;
+}
+
+.operations a,
+.add_operation a,
+.main_screen_links a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: fit-content;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.operations a:hover,
+.add_operation a:hover,
+.main_screen_links a:hover {
+    background-color: white;
+    color: black;
+}

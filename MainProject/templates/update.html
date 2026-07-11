@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="operations">
+    <h2>Список всех операций</h2>
+    <h3>Обновить операцию</h3>
+    <ul>
+        {% for row in operation_res %}
+        <li>{{ row[0] }} | {{ row[1] }} | {{ row[2] }} | {{ row[3] }}</li>
+        {% endfor %}
+    </ul>
+    <form action="/update1" method="post">
+        <input name="id" placeholder="ID операции">
+        <input name="category" placeholder="Категория">
+        <input name="subcategory" placeholder="Подкатегория">
+        <input name="amount" type="number" placeholder="Сумма">
+        <button type="submit">Обновить операцию</button>
+    </form>
+    <a href="/">Вернуться на главную</a>
+</div>
+{% endblock %}

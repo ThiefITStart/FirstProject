@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="add_operation">
+    <h2>Добавить операцию</h2>
+    <form action="/add" method="post">
+        <input name="category" placeholder="Категория">
+        <input name="subcategory" placeholder="Подкатегория">
+        <input name="amount" type="number" placeholder="Сумма">
+        <button type="submit">Добавить</button>
+    </form>
+    <a href="/">Вернуться на главную</a>
+</div>
+{% endblock %}
