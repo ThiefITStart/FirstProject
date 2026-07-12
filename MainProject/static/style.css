@@ -4,6 +4,22 @@ body {
     font-family: "Times New Roman", serif;
 }
 
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    border-right: 1px solid white;
+    padding: 10px;
+}
+
+.page_content {
+    flex: 1;
+    padding: 10px;
+}
+
 h1 {
     text-align: center;
     border: 1px solid white;
@@ -14,23 +30,30 @@ h1 {
     font-size: 45px;
 }
 
+.main_screen p,
+.operations p {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    width: fit-content;
+    margin: 15px auto;
+    background-color: white;
+    color: black;
+}
+
 .main_screen h2,
 .add_operation h2,
 .operations h2 {
+    text-align: center;
+    margin: 15px auto;
     font-size: 25px;
     border: 1px solid white;
     border-radius: 10px;
     padding: 15px;
     width: fit-content;
-}
-
-.main_screen_links ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.main_screen_links li {
-    margin-bottom: 5px;
 }
 
 .add_operation input,
@@ -40,15 +63,32 @@ h1 {
     color: white;
     border: 1px solid white;
     border-radius: 5px;
+    padding: 5px;
+    width: fit-content;
+}
+
+.add_operation form,
+.operations form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin: 15px auto;
+    flex-wrap: wrap;
 }
 
 .add_operation button,
 .operations button {
     color: white;
+    text-align: center;
+    width: fit-content;
+    font-size: 15px;
+    font-family: "Times New Roman", serif;
     background-color: black;
     border: 1px solid white;
     border-radius: 5px;
     cursor: pointer;
+    padding: 5px 10px;
 }
 
 .add_operation button:hover,
@@ -62,6 +102,8 @@ h1 {
     border-radius: 10px;
     padding: 5px;
     width: fit-content;
+    margin: 15px auto;
+    text-align: center;
 }
 
 .operations input::placeholder,
@@ -70,21 +112,47 @@ h1 {
 }
 
 .operations a,
-.add_operation a,
-.main_screen_links a {
+.add_operation a {
     text-decoration: none;
     color: white;
     border: 1px solid white;
     border-radius: 10px;
     padding: 5px 10px;
     width: fit-content;
-    display: inline-block;
-    margin: 5px 0;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
 }
 
 .operations a:hover,
-.add_operation a:hover,
-.main_screen_links a:hover {
+.add_operation a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    width: fit-content;
+    margin: 0 auto 15px auto;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin: 0 auto 15px auto;
+}
+
+.sidebar a:hover {
     background-color: white;
     color: black;
 }

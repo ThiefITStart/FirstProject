@@ -2,40 +2,19 @@
 {% block content %}
 <div class="main_screen">
     <h2>Операции</h2>
-    <ul>
         {% for operation in operations %}
-        <li>{{ operation[0] }}: {{ operation[1] }} - {{ operation[2] }}</li>
+        <p>{{ operation[0] }}: {{ operation[1] }} - {{ operation[2] }}</p>
         {% endfor %}
-    </ul>
 </div>
 <div class="main_screen">
     <h2>Статистика по операциям</h2>
-    <ul>
-        <li>Количество операций: {{sql_count}}</li>
-        <li>Общая сумма: {{sql_total}}</li>
-    </ul>
+        <p>Количество операций: {{sql_count }}</p>
+        <p>Общая сумма: {{ sql_total }}</p>
 </div>
 <div class="main_screen">
     <h2>Итоги по категориям</h2>
-    <ul>
-        {% for category in categories %}
-        <li>{{ category[0] }}: {{ category[1]}}</li>
-        {% endfor %}
-    </ul>
-</div>
-<div class="main_screen_links">
-    <h2>Управление операциями</h2>
-    <ul>
-        <li>
-            <a href="/add_operation">Добавить операцию</a>
-
-        </li>
-        <li>
-            <a href="/delete">Удалить операцию</a>
-        </li>
-        <li>
-            <a href="/update">Обновить операцию</a>
-        </li>
-    </ul>
+    {% for category in categories %}
+        <p>{{ category[0] }}: {{ category[1] }}</p>
+    {% endfor %}
 </div>
 {% endblock %}

@@ -6,8 +6,19 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h1>Менеджер расходов</h1>
-    {% block content %}
-    {% endblock %}
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>Меню</h2>
+            <a href="/">Главная страница</a>
+            <a href="/add_operation">Добавить операцию</a>
+            <a href="/delete">Удалить операцию</a>
+            <a href="/update">Обновить операцию</a>
+        </aside>
+        <main class="page_content">
+            <h1>Менеджер расходов</h1>
+            {% block content %}
+            {% endblock %}
+        </main>
+    </div>
 </body>
 </html>

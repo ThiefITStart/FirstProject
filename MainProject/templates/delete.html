@@ -3,11 +3,9 @@
 <div class="operations">
     <h2>Список всех операций</h2>
     <h3>Удалить операцию</h3>
-    <ul>
-        {% for row in operation_res %}
-        <li>{{ row[0] }} | {{ row[1] }} | {{ row[2] }} | {{ row[3] }}</li>
-        {% endfor %}
-    </ul>
+    {% for row in operation_res %}
+        <p>{{ row[0] }} | {{ row[1] }} | {{ row[2] }} | {{ row[3] }}</p>
+    {% endfor %}
     <form action="/delete1" method="post">
         <input name="id" placeholder="ID операции">
         <button type="submit">Удалить</button>
